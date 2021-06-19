@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
+            <Label Text="CALCULADORA" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" Padding="0"/>
+        </Frame>
+        <Entry Placeholder="Ingrese el primer número:" 
+               x:Name="num1"
+               Keyboard="Numeric"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+
+        <Entry Placeholder="Ingrese el segundo número:" 
+               x:Name="num2"
+               Keyboard="Numeric"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+        
+        <Label Text="Elija una de las Operaciones"
+               TextColor="Black" 
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               Padding="20"/>
+
+        <Button x:Name="suma"
+                Text="Suma" 
+                Clicked="suma_Clicked" 
+                BackgroundColor="LightCoral"
+                CornerRadius="50"
+                FontAttributes="Bold"
+                FontSize="Large"/>
+        
+        <Button Text="Resta" 
+                x:Name="resta"
+                Clicked="resta_Clicked"
+                BackgroundColor="Coral"
+                CornerRadius="50"
+                FontAttributes="Bold"
+                FontSize="Large"/>
+        
+        <Button Text="Multiplicación" 
+                x:Name="producto"
+                Clicked="producto_Clicked"
+                BackgroundColor="LightCoral"
+                CornerRadius="50"
+                FontAttributes="Bold"
+                FontSize="Large"/>
+        
+        <Button Text="División" 
+                x:Name="division"
+                Clicked="division_Clicked"
+                BackgroundColor="Coral"
+                CornerRadius="50"
+                FontAttributes="Bold"
+                FontSize="Large"/>
+        <Button Text="Limpiar Entradas"
+                x:Name="limpiar"
+                Clicked="limpiar_Clicked"
+                BackgroundColor="LightSkyBlue"
+                FontAttributes="Bold"
+                FontSize="Large"
+                CornerRadius="50"/>
+
+
+    </StackLayout>
+
+</ContentPage>
